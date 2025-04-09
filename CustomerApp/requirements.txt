@@ -1,0 +1,28 @@
+.NET SDK 6.0 veya uzeri
+MongoDB Community Server (localhost:27017)
+
+NuGet Paketleri:
+MongoDB.Driver >= 2.19.0
+MongoDB.Bson >= 2.19.0
+MongoDB.Driver.Core >= 2.19.0
+
+Proje Klasor Yapisi:
+CustomerApp/
+│
+├── Models/
+│   └── Customer.cs         // Müşteri nesnesi (Id, Name, Email içeren)
+│
+├── MongoService.cs         // MongoDB işlemleri (Add, Get, Delete, Update metodlari)
+│
+└── Program.cs              // Main uygulamanin bulundugu dosya
+
+
+MongoDB Veritabani:
+- Veritabani Adi: CustomerDB
+- Koleksiyon Adi: Customers
+
+
+
+dotnet new console dosya olusturmak icin
+dotnet add package MongoDB.Driver
+dotnet run
