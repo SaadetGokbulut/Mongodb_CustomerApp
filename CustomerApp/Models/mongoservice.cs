@@ -17,7 +17,7 @@ namespace CustomerApp
         public void AddCustomer(Customer customer)
         {
             _customers.InsertOne(customer);
-            Console.WriteLine("Müşteri eklendi.");
+            Console.WriteLine("Sunucuya baglandi.");
         }
 
         public List<Customer> GetCustomers()
